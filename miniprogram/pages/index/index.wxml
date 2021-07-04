@@ -1,0 +1,23 @@
+    
+
+<camera frame-size="medium"
+        bindinitdone="onCameraInit"
+        mode="normal"
+        device-position="back"
+        resolution="high"
+        class="middle"
+        style="width: 256px; height: 256px;"
+        flash="off"/>
+<view id="footer1" class="middle">
+  <text class="footerItem">{{code1}}</text>
+</view>
+<view id="footer2" class="middle">
+  <text class="footerItem">{{code2}}</text>
+</view>
+<view id="footer3" class="middle">
+  <text class="footerItem">{{code3}}</text>
+</view>
+<canvas type="2d"
+      id="capture"
+      style="width: 1px; height: 1px;"/>
+<button id="scan" bind:tap="scan" type='primary'>scan</button>
